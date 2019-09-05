@@ -2,7 +2,10 @@
 
 namespace Thomasdominic\Connectable;
 
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
+use Thomasdominic\Connectable\Events\ConnectableCreated;
 
 class ConnectableServiceProvider extends ServiceProvider
 {
