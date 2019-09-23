@@ -16,7 +16,7 @@ trait Connectable
         return [
             'name' => $data->get('name'),
             'email' => $data->get('email'),
-            'password' => ($cryptedPassword ?? $data->get('password') ?? Hash::make($data->get('password'))),
+            'password' => ($cryptedPassword ? $data->get('password') : Hash::make($data->get('password'))),
         ];
     }
 
