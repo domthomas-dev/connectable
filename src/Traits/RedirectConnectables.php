@@ -3,6 +3,7 @@
 
 namespace Thomasdominic\Connectable\Traits;
 
+use Illuminate\Support\Facades\Auth;
 
 trait RedirectConnectables
 {
